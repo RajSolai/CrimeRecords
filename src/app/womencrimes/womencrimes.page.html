@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>
+      {{statename}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item>
+    <ion-label>Cases Pending</ion-label>
+    <ion-badge color="primary" mode="ios">{{casepending}}</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cases Reported</ion-label>
+    <ion-badge color="secondary" mode="ios">{{casereported}}</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Total Cases</ion-label>
+    <ion-badge color="danger" mode="ios">{{casetotal}}</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cases filed as true but with no sufficient evidence</ion-label>
+    <ion-badge color="warning" mode="ios">{{truebutNoevidence}}</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cases files as False</ion-label>
+    <ion-badge color="success" mode="ios">{{falsereports}}</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cases filed as false due to mistakes</ion-label>
+    <ion-badge color="medium" mode="ios">{{falsereportmistake}}</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cases disposed by the Police Department</ion-label>
+    <ion-badge color="dark" mode="ios">{{casedisposedpolice}}</ion-badge>
+  </ion-item>
+</ion-list>
+</ion-content>

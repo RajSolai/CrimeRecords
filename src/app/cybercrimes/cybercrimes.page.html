@@ -16,12 +16,12 @@
   <ion-list>
     <ion-item
       *ngFor="let data of records?.records;let i=index"
-      (click)="sendData(data.state_ut_col_3_,data._cases_pending_investigation_from_previous_year_col_4_,data._cases_reported_during_the_year_col_5_,data.total_cases_for_investigation_col_6_col_4_5_,data.final_report___true_but_insufficient_evidence_col_10_,data.final_report___false_col_11_,data.final_report___mistake_of_fact_col_12_,data.total_cases_disposed_off_by_police_col_16_col_8_col_9_col_14_col_15_)"
+      (click)="SaveData(data.state_ut_col_2_,data.foreign_national___cracker_hacker_col_5_,data.foreign_national___cyber_terrorist_col_6_,data.indian_national___professional_computer_geek_hacker_cracker_col_16_,data.indian_national___student_col_13_,data.foreign_national___others_col_7_)"
     >
       <ion-avatar slot="start">
         <img src="{{imageset[i]}}" alt="" />
       </ion-avatar>
-      <ion-label> {{data.state_ut_col_3_}} </ion-label>
+      <ion-label> {{data.state_ut_col_2_}} </ion-label>
     </ion-item>
   </ion-list>
 </ion-content>

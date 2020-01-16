@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>
+      {{stateName}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Crakers or Hackers Arrested</ion-label>
+      <ion-badge color="primary" mode="ios">{{crackerHacker}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Cyber Terrorist Arrested</ion-label>
+      <ion-badge color="secondary" mode="ios">{{cyberTerrorist}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Professional geek hackers Arrested</ion-label>
+      <ion-badge color="danger" mode="ios">{{proHacker}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Students Arrested</ion-label>
+      <ion-badge color="warning" mode="ios">{{Students}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Arrested in other categories of cyber crime</ion-label>
+      <ion-badge color="success" mode="ios">{{Others}}</ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>

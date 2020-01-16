@@ -14,6 +14,18 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+  },
+  {
+    path: 'womencrimes',
+    loadChildren: () => import('./womencrimes/womencrimes.module').then( m => m.WomencrimesPageModule)
+  },
+  {
+    path: 'cybercrimes',
+    loadChildren: () => import('./cybercrimes/cybercrimes.module').then( m => m.CybercrimesPageModule)
+  },
+  {
+    path: 'cybercrimedetail',
+    loadChildren: () => import('./cybercrimedetail/cybercrimedetail.module').then( m => m.CybercrimedetailPageModule)
   }
 ];
 

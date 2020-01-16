@@ -1,0 +1,5 @@
+{
+  "cyber_crime": "https://api.data.gov.in/resource/81e1ed36-f67e-4c48-b1ae-fad90bf37bce?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b&format=json&offset=0&limit=39",
+  "state_offence": "https://api.data.gov.in/resource/47081e07-a66d-44a0-b568-e8def0b59d48?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b&format=json&offset=0&limit=10",
+  "SSL_crimes_metrocities": "https://api.data.gov.in/resource/f47ad302-1243-4351-8cc2-6cf5f61faecf?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b&format=json&offset=0&limit=10"
+}
