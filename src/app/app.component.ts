@@ -25,6 +25,11 @@ export class AppComponent {
       title: "Cyber Crimes",
       url: "/cybercrimes",
       icon: "globe"
+    },
+    {
+      title: "Crime Statistics",
+      url: "/stats",
+      icon: "analytics"
     }
   ];
 

@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>
+      {{Statename}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Persons Arrested - Male</ion-label>
+      <ion-badge color="primary" mode="ios">{{peoplearrestedmale}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Persons Arrested - Female</ion-label>
+      <ion-badge color="pink" mode="ios">{{peoplearrestedfemale}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Persons Arrested - Total</ion-label>
+      <ion-badge color="danger" mode="ios">{{peoplearrestedtotal}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Persons Chargesheeted - Male</ion-label>
+      <ion-badge color="primary" mode="ios">{{peoplechargedmale}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Persons Chargesheeted - Female</ion-label>
+      <ion-badge color="pink" mode="ios">{{peoplechargedfemale}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Persons Chargesheeted - Total</ion-label>
+      <ion-badge color="danger" mode="ios">{{peoplechargedtotal}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Persons Discharged - Male</ion-label>
+      <ion-badge color="primary" mode="ios">{{peopledischargedmale}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Persons Discharged - Female</ion-label>
+      <ion-badge color="pink" mode="ios">{{peopledischargedfemale}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Persons Discharged - Total</ion-label>
+      <ion-badge color="danger" mode="ios">{{peopledischargedtotal}}</ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>

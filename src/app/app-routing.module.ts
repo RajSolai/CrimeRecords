@@ -26,6 +26,18 @@ const routes: Routes = [
   {
     path: 'cybercrimedetail',
     loadChildren: () => import('./cybercrimedetail/cybercrimedetail.module').then( m => m.CybercrimedetailPageModule)
+  },
+  {
+    path: 'arrestrecords',
+    loadChildren: () => import('./arrestrecords/arrestrecords.module').then( m => m.ArrestrecordsPageModule)
+  },
+  {
+    path: 'arrestrecord-details',
+    loadChildren: () => import('./arrestrecord-details/arrestrecord-details.module').then( m => m.ArrestrecordDetailsPageModule)
+  },
+  {
+    path: 'stats',
+    loadChildren: () => import('./stats/stats.module').then( m => m.StatsPageModule)
   }
 ];
 

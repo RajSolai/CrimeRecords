@@ -1,18 +1,18 @@
 import { Component, OnInit } from "@angular/core";
+import { ArrestdataService } from "../services/arrestdata.service";
 import { HttpClient } from "@angular/common/http";
 import { NavController } from "@ionic/angular";
-import { CybercrimedataService } from "../services/cybercrimedata.service";
 
 @Component({
-  selector: "app-cybercrimes",
-  templateUrl: "./cybercrimes.page.html",
-  styleUrls: ["./cybercrimes.page.scss"]
+  selector: "app-arrestrecords",
+  templateUrl: "./arrestrecords.page.html",
+  styleUrls: ["./arrestrecords.page.scss"]
 })
-export class CybercrimesPage implements OnInit {
+export class ArrestrecordsPage implements OnInit {
   constructor(
+    private arrestdataservice: ArrestdataService,
     private http: HttpClient,
-    private nav: NavController,
-    private cybercrimedataservice: CybercrimedataService
+    private nav: NavController
   ) {}
   records;
   notDataLoaded = true;
@@ -40,7 +40,7 @@ export class CybercrimesPage implements OnInit {
   ];
   ngOnInit() {
     const api =
-      "https://api.data.gov.in/resource/81e1ed36-f67e-4c48-b1ae-fad90bf37bce?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b&format=json&offset=0&limit=39";
+      "https://api.data.gov.in/resource/47081e07-a66d-44a0-b568-e8def0b59d48?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b&format=json&offset=0&limit=10";
     this.http.get(api).subscribe(data => {
       this.records = data;
       this.notDataLoaded = false;
@@ -48,20 +48,28 @@ export class CybercrimesPage implements OnInit {
   }
   SaveData(
     stateName,
-    crackerHacker,
-    cyberTerrorist,
-    proHacker,
-    Students,
-    Others
+    peopleArrestedMale,
+    peopleArrestedFemale,
+    peopleArrestedTotal,
+    peopleChargedMale,
+    peopleChargedFemale,
+    peopleChargedTotal,
+    peopleDischargedMale,
+    peopleDischargedFemale,
+    peopleDischargedTotal
   ) {
-    this.cybercrimedataservice.saveData(
+    this.arrestdataservice.saveData(
       stateName,
-      crackerHacker,
-      cyberTerrorist,
-      proHacker,
-      Students,
-      Others
+      peopleArrestedMale,
+      peopleArrestedFemale,
+      peopleArrestedTotal,
+      peopleChargedMale,
+      peopleChargedFemale,
+      peopleChargedTotal,
+      peopleDischargedMale,
+      peopleDischargedFemale,
+      peopleDischargedTotal
     );
-    this.nav.navigateForward("/cybercrimedetail");
+    this.nav.navigateForward("/arrestrecord-details");
   }
 }

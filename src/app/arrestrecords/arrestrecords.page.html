@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Select State or Union Territories
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="notDataLoaded">
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
+  </div>
+  <ion-list>
+    <ion-item
+      *ngFor="let data of records?.records;let i=index"
+      (click)="SaveData(data.state_ut,data.persons_arrested___male,data.persons_arrested___female,data.persons_arrested___total,data.persons_chargesheeted___male,data.persons_chargesheeted___female,data.persons_chargesheeted___total,data.persons_discharged___male,data.persons_discharged___female,data.persons_discharged___total)"
+    >
+      <ion-avatar slot="start">
+        <img src="{{imageset[i]}}" alt="" />
+      </ion-avatar>
+      <ion-label> {{data.state_ut}} </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
