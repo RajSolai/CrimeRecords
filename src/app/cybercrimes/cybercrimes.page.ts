@@ -34,9 +34,9 @@ export class CybercrimesPage implements OnInit {
     "https://cdn.s3waas.gov.in/s36a10bbd480e4c5573d8f3af73ae0454b/uploads/2018/03/20180326100.gif",
     "https://www.hubert-herald.nl/BhaGoa_bestanden/image008.jpg",
     "https://www.studyandscore.com/images_all/1_Study%20material/General%20knowledge/State%20emblem/Gujarat-state-emblem.jpg",
-    "http://www.hubert-herald.nl/BhaHaryana_bestanden/image008.jpg",
+    "https://www.hubert-herald.nl/BhaHaryana_bestanden/image008.jpg",
     "https://cdn.meramaal.com/wp-content/uploads/2018/06/himachala-Logo.jpg",
-    "http://www.jakfinance.nic.in/media/images/Srologo.png"
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Seal_of_Jammu_and_Kashmir_color.png/212px-Seal_of_Jammu_and_Kashmir_color.png"
   ];
   ngOnInit() {
     const api =

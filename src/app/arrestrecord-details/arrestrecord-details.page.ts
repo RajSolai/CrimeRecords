@@ -28,6 +28,6 @@ export class ArrestrecordDetailsPage implements OnInit {
     this.peoplechargedtotal = this.arrestdataservice.peopleChargedTotal;
     this.peopledischargedmale = this.arrestdataservice.peopleDischargedMale;
     this.peopledischargedfemale = this.arrestdataservice.peopleDischargedFemale;
-    this.peopledischargedfemale = this.arrestdataservice.peopleDischargedTotal;
+    this.peopledischargedtotal = this.arrestdataservice.peopleDischargedTotal;
   }
 }

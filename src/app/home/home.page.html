@@ -60,15 +60,25 @@
       </ion-col>
       <ion-col size="6">
         <ion-card [routerLink]="['/stats']">
-          <img src="https://media.giphy.com/media/NnzfyVTkmOnW8/giphy.gif" alt="" />
+          <img
+            src="https://media.giphy.com/media/NnzfyVTkmOnW8/giphy.gif"
+            alt=""
+          />
           <ion-card-header>
             <ion-card-title>Statistics</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            Short Satistics on the Crime and Criminals <br> with interactive graphs and charts
+            Short Satistics on the Crime and Criminals <br />
+            with interactive graphs and charts
           </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
+  <ion-footer>
+    <ion-item class="foot-label">
+      <ion-label>City : {{city}}</ion-label>
+      <ion-label slot="end">Temperature(C) : {{temps}}</ion-label>
+    </ion-item>
+  </ion-footer>
 </ion-content>

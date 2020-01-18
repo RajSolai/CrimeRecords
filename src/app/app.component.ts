@@ -17,6 +17,11 @@ export class AppComponent {
       icon: "home"
     },
     {
+      title : "Arrest Records",
+      url : "/arrestrecords",
+      icon : "man"
+    },
+    {
       title: "Crime Against Women",
       url: "/list",
       icon: "female"
@@ -30,6 +35,11 @@ export class AppComponent {
       title: "Crime Statistics",
       url: "/stats",
       icon: "analytics"
+    },
+    {
+      title:"About",
+      url:"/about",
+      icon:"information-circle"
     }
   ];
 

@@ -1,0 +1,16 @@
+{
+  "name": "Crime Record Management",
+  "short_name": "Crime Records",
+  "theme_color": "#f0134d",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

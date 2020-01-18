@@ -30,8 +30,8 @@ export class StatsPage implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    // get data
-    this.http.get("").subscribe(data => {});
+    // display alert to rotate device landscape
+    alert("Hey!, are you using in an mobile device ? Try Rotating Landscape !")
     // display chart for GUJARAT
     this.barChart0 = new Chart(this.barCanvas0.nativeElement, {
       type: "doughnut",
