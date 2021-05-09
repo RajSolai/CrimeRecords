@@ -5,7 +5,7 @@ import { HttpClient } from "@angular/common/http";
 @Component({
   selector: "app-home",
   templateUrl: "home.page.html",
-  styleUrls: ["home.page.scss"]
+  styleUrls: ["home.page.scss"],
 })
 export class HomePage implements OnInit {
   // from the native api
@@ -14,13 +14,13 @@ export class HomePage implements OnInit {
   weatherData;
   // from the open weather map api
   temps: Number;
-city ;
+  city;
 
   constructor(private geolocation: Geolocation, private http: HttpClient) {}
   ngOnInit() {
     this.geolocation
       .getCurrentPosition()
-      .then(resp => {
+      .then((resp) => {
         this.lat = resp.coords.latitude;
         this.lon = resp.coords.longitude;
         var apiurl =
@@ -29,10 +29,10 @@ city ;
           "&lon=" +
           resp.coords.longitude +
           "&APPID=b24f130c5bb9bea26174495e6e07f9ee";
-        this.http.get(apiurl).subscribe(owmdata => {
+        this.http.get(apiurl).subscribe((owmdata) => {
           this.weatherData = owmdata;
           // @ts-ignore
-          this.city = owmdata.name
+          this.city = owmdata.name;
           // @ts-ignore
           this.temps = owmdata.main.temp - 273;
           // @ts-ignore
@@ -40,7 +40,7 @@ city ;
         });
         // resp.coords.longitude
       })
-      .catch(error => {
+      .catch((error) => {
         console.log("Error getting location", error);
       });
   }
